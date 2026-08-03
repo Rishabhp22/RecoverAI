@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --divider: #cbd5e1;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --primary: #0f4c81;
+  --primary-foreground: #ffffff;
+  --secondary: #2563eb;
+  --secondary-foreground: #ffffff;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --destructive: #dc2626;
+
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+  --muted: #f1f5f9;
+  --muted-foreground: var(--text-secondary);
+  --accent: #eaf2f9;
+  --accent-foreground: var(--primary);
+  --input: var(--border);
+  --ring: var(--secondary);
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  --radius: 0.625rem;
+  --radius-button: 0.625rem;
+  --radius-input: 0.625rem;
+  --radius-card: 1rem;
+  --radius-modal: 1.25rem;
+
+  --shadow-card: 0 1px 3px rgb(15 23 42 / 8%);
+  --shadow-modal: 0 8px 24px rgb(15 23 42 / 12%);
+  --shadow-dropdown: 0 12px 32px rgb(15 23 42 / 16%);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-divider: var(--divider);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-destructive: var(--destructive);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-button: var(--radius-button);
+  --radius-input: var(--radius-input);
+  --radius-card: var(--radius-card);
+  --radius-modal: var(--radius-modal);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --shadow-card: var(--shadow-card);
+  --shadow-modal: var(--shadow-modal);
+  --shadow-dropdown: var(--shadow-dropdown);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground;
+  }
+}
